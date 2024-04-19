@@ -1,0 +1,46 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Retrieval</title>
+    <link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="title">Image Retrieval</h1>
+    <div style="text-align: center; font-size: 15pt; margin-bottom: 15px">
+        <span>Your Organization or Event</span>
+    </div>
+
+    <div id="imageGrid" class="carousel slide teaser-carousel" data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner">
+            <!-- CIFAR images will be loaded here -->
+        </div>
+    </div>
+
+    <div id="dropBox" class="drop-box">
+        Drag and drop an image here to retrieve similar images
+    </div>
+
+    <div id="results" class="results">
+        <!-- Retrieved images will be displayed here -->
+    </div>
+
+    <!-- Abstract section -->
+    <div style="text-align: justify;text-justify: inter-word;">
+        <p><b>Abstract</b></p>
+        <p>This is the abstract section where the overview of the image retrieval system would be discussed. Describe the main objectives, functionality, and the core technology or methods being used.</p>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
