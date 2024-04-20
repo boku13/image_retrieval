@@ -2,7 +2,7 @@ import os
 from PIL import Image
 
 class cifar10:
-    def __init__(self, root_dir='utils/data/cifar10', images_per_label=10):
+    def __init__(self, root_dir='backend/utils/data/cifar10', images_per_label=10):
         self.root_dir = os.path.abspath(root_dir)
         self.images_per_label = images_per_label
         self.classes = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']  # Predefined class order
