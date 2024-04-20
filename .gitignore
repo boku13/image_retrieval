@@ -6,7 +6,7 @@ __pycache__/
 .Python
 db.sqlite3
 *.db
-*.pkl
+# *.pkl
 
 backend/data/cifar10
 backend/utils/data/cifar10.tar.gz
