@@ -50,9 +50,11 @@ def upload_image():
     label = retriever.inference(preprocessed_image)
     images = retriever.retrieve_images(dataset.classes[label])
 
+    images = np.array(images)
     # Convert images to base64 strings
     response = {'images': []}
     for img in images:
+        print(img)
         if img.dtype != np.uint8:
             img = img.astype(np.uint8)
         if not img.flags['C_CONTIGUOUS']:
