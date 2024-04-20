@@ -1,39 +1,66 @@
-/* styles.css */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.title {
+    font-size: 200%;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.author, .affiliations {
+    text-align: center;
     margin: 20px;
-}
-
-.image-grid img {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+    font-size: 14pt;
 }
 
 .drop-box {
     height: 150px;
     border: 3px dashed #ccc;
-    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #888;
+    margin: 20px;
+    font-size: 16px;
 }
 
-.results {
+.results, .image-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 20px;
 }
 
-.results img {
+.results img, .image-grid img {
     width: 100px;
     height: 100px;
+}
+
+.abstract {
+    margin: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-size: 12pt;
+}
+
+.carousel-inner, .teaser-carousel {
+    width: 100%;
+    height: auto;
 }
